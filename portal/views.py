@@ -59,28 +59,28 @@ def product_commercial(request):
 	return render_to_response('portal_product_commercial.html',{}, RequestContext(request))
 
 def product_commercial_hiace(request):
-	return render_to_response('portal_product_commercial_hiace.html',{}, RequestContext(request))
+	return render_to_response('portal-product-commercial-hiace.html',{}, RequestContext(request))
 
 def product_commercial_dyna(request):
-	return render_to_response('portal_product_commercial_dyna.html',{}, RequestContext(request))
+	return render_to_response('portal-product-commercial-dyna.html',{}, RequestContext(request))
 
 def product_commercial_hilux_d_cab(request):
-	return render_to_response('portal_product_commercial_hilux_d_cab.html',{}, RequestContext(request))
+	return render_to_response('portal-product-commercial-hilux-d-cab.html',{}, RequestContext(request))
 
 def product_commercial_hilux_s_cab(request):
-	return render_to_response('portal_product_commercial_hilux_s_cab.html',{}, RequestContext(request))
+	return render_to_response('portal-product-commercial-hilux-s-cab.html',{}, RequestContext(request))
 
 def product_sport(request):
-	return render_to_response('portal_product_sport.html',{}, RequestContext(request))
+	return render_to_response('portal-product-sport.html',{}, RequestContext(request))
 
 def product_sport_toyota_86(request):
-	return render_to_response('portal_product_sport_toyota_86.html',{}, RequestContext(request))
+	return render_to_response('portal-product-sport-toyota-86.html',{}, RequestContext(request))
 
 def product_hybrid(request):
-	return render_to_response('portal_product_hybrid.html',{}, RequestContext(request))
+	return render_to_response('portal-product-hybrid.html',{}, RequestContext(request))
 
 def product_hybrid_prius(request):
-	return render_to_response('portal_product_hybrid_prius.html',{}, RequestContext(request))
+	return render_to_response('portal-product-hybrid-prius.html',{}, RequestContext(request))
 
 def product_hybrid_camry_hybrid(request):
-	return render_to_response('portal_product_hybrid_camry_hybrid.html',{}, RequestContext(request))
+	return render_to_response('portal-product-hybrid-camry-hybrid.html',{}, RequestContext(request))
