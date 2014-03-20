@@ -1,0 +1,41 @@
+ {% extends 'bbase.html' %}
+{% load staticfiles %}
+
+ {% block content %}
+  <!-- Sliding panel starts-->
+
+  <!-- Header ends -->
+
+  <!-- Page heading -->
+  <!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+  <div class="page-heading blightblue">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> Sport - Toyota 86</h2>
+         <div class="pull-right heading-meta">Mobil yang bukan hanya alat <span class="lightblue">transportasi, </span> melainkan juga untuk <span class="lightblue">tantangan</span> dunia balap.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page heading ends -->
+
+<!-- Content starts -->
+  <div class="content">
+    <div class="container">
+      <div class="row">
+
+          <div class="col-md-12">
+          <center><img src="{% static "img/product/toyota/toyota-86-big.jpg" %}" alt=""  class="img-responsive" /></center>
+          </div>
+                               
+      </div>
+    </div>    
+  </div>
+                
+      
+  <!-- Content ends -->
+
+
+
+{% endblock %}

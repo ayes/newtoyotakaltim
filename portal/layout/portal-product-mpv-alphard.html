@@ -1,0 +1,41 @@
+ {% extends 'bbase.html' %}
+{% load staticfiles %}
+
+ {% block content %}
+  <!-- Sliding panel starts-->
+
+  <!-- Header ends -->
+
+  <!-- Page heading -->
+  <!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+  <div class="page-heading blightblue">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> MPV - Alphard</h2>
+         <div class="pull-right heading-meta">Alat Transportasi andalan <span class="lightblue">keluarga,</span> memuat lebih <span class="lightblue">banyak penumpang</span> dan barang.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page heading ends -->
+
+<!-- Content starts -->
+  <div class="content">
+    <div class="container">
+      <div class="row">
+
+          <div class="col-md-12">
+          <center><img src="{% static "img/product/mpv/mpv-alphard-big.jpg" %}" alt=""  class="img-responsive" /></center>
+          </div>
+                               
+      </div>
+    </div>    
+  </div>
+                
+      
+  <!-- Content ends -->
+
+
+
+{% endblock %}
