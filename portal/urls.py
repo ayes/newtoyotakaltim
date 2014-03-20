@@ -17,6 +17,8 @@ urlpatterns = patterns('',
 	url(r'^product/mpv/alphard/?', 'portal.views.product_mpv_alphard'),
 	url(r'^product/mpv/nav1/?', 'portal.views.product_mpv_nav1'),
 	url(r'^product/mpv/kijang-innova/?', 'portal.views.product_mpv_kijang_innova'),
+	url(r'^product/mpv/avanza-veloz/?', 'portal.views.product_mpv_avanza_veloz'),
+	url(r'^product/mpv/avanza/?', 'portal.views.product_mpv_avanza'),
 
 	url(r'^product/suv/?$', 'portal.views.product_suv'),
 	url(r'^product/suv/land-cruiser/?', 'portal.views.product_suv_land_cruiser'),

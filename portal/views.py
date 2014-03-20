@@ -43,17 +43,23 @@ def product_mpv_nav1(request):
 def product_mpv_kijang_innova(request):
 	return render_to_response('portal-product-mpv-kijang-innova.html',{}, RequestContext(request))
 
+def product_mpv_avanza_veloz(request):
+	return render_to_response('portal-product-mpv-avanza-veloz.html',{}, RequestContext(request))
+
+def product_mpv_avanza(request):
+	return render_to_response('portal-product-mpv-avanza.html',{}, RequestContext(request))
+
 def product_suv(request):
 	return render_to_response('portal_product_suv.html',{}, RequestContext(request))
 
 def product_suv_land_cruiser(request):
-	return render_to_response('portal_product_land_cruiser.html',{}, RequestContext(request))
+	return render_to_response('portal-product-suv-land-cruiser.html',{}, RequestContext(request))
 
 def product_suv_new_fortuner(request):
-	return render_to_response('portal_product_suv_new_fortuner.html',{}, RequestContext(request))
+	return render_to_response('portal-product-suv-new-fortuner.html',{}, RequestContext(request))
 
 def product_suv_new_rush(request):
-	return render_to_response('portal_product_new_rush.html',{}, RequestContext(request))
+	return render_to_response('portal-product-suv-new-rush.html',{}, RequestContext(request))
 
 def product_commercial(request):
 	return render_to_response('portal_product_commercial.html',{}, RequestContext(request))
