@@ -1,0 +1,89 @@
+ {% extends 'bbase.html' %}
+{% load staticfiles %}
+
+ {% block content %}
+  <!-- Sliding panel starts-->
+
+  <!-- Header ends -->
+
+  <!-- Page heading -->
+  <!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+  <div class="page-heading blightblue">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> Commercial</h2>
+          <div class="pull-right heading-meta">Performa dan kehandalan yang <span class="lightblue">sangat layak</span> untuk <span class="lightblue">menopang</span> kegiatan perekonomian.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page heading ends -->
+
+<!-- Content starts -->
+  <div class="content">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4">
+                             <div class="cclient">
+                                <!-- Client image -->
+                                <h3>Hiace</h3>
+                                <div class="cimage">
+                                   <img src="{% static "img/product/commercial/commercial_hiace.jpg" %}" alt=""  class="img-responsive" />
+                                </div>
+                                <!-- Description -->
+                                <div class="cmatter">
+                                   <!-- Site -->
+                                   <a href="#" class="btn btn-danger">Lihat Lebih Detail</a>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="cclient">
+                                <!-- Client image -->
+                                <h3>DYNA</h3>
+                                <div class="cimage">
+                                   <img src="{% static "img/product/commercial/commercial-dyna.jpg" %}" alt=""  class="img-responsive" />
+                                </div>
+                                <div class="cmatter">
+                                   <a href="#" class="btn btn-danger">Lihat Lebih Detail</a>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="cclient">
+                                <!-- Client image -->
+                                <h3>Hilux D-Cab</h3>
+                                <div class="cimage">
+                                   <img src="{% static "img/product/commercial/commercial-hilux-d-cab.jpg" %}" alt=""  class="img-responsive" />
+                                </div>
+                                <div class="cmatter">
+                                   <a href="#" class="btn btn-danger">Lihat Lebih Detail</a>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-4">
+                             <div class="cclient">
+                                <!-- Client image -->
+                                <h3>Hilux S-Cab</h3>
+                                <div class="cimage">
+                                   <img src="{% static "img/product/commercial/commercial-hilux-s-cab.jpg" %}" alt=""  class="img-responsive" />
+                                </div>
+                                <div class="cmatter">
+                                   <a href="#" class="btn btn-danger">Lihat Lebih Detail</a>
+                                </div>
+                             </div>
+                          </div> 
+                </div>
+                
+               
+
+    </div>
+  </div>
+  <!-- Content ends -->
+
+
+
+{% endblock %}

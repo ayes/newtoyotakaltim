@@ -1,0 +1,433 @@
+ {% extends 'bbase.html' %}
+
+{% load staticfiles %}
+
+{% block nbcss_slider %}
+  <!-- cSlider -->
+  <link rel="stylesheet" href="{% static "style/slider.css" %}">
+{% endblock %}
+
+ {% block content %}
+  <!-- Sliding panel starts-->
+
+
+<!-- Slider starts -->
+  <div class="parallax-slider">
+          <!-- Slider (Parallax Slider) -->            
+            <div id="da-slider" class="da-slider">
+              <!-- Each slide should be enclosed inside "da-slide" class -->
+              <!-- Slide starts -->
+              <div class="da-slide">
+
+                  <p class="bviolet">
+                    <!-- Heading -->
+                    <span class="das-head">Etios Valco</span><br />
+                    <!-- Para -->
+                     Kini hadir dengan tampilan lebih agresif dan memberikan tersendiri saat mengendarai. Sebuah performa berkendara paling berkualitas di kelasnya.
+                    <br />
+                    <!-- Link -->
+                    <a class="das-link btn btn-default">Baca Selengkapnya <i class="icon-double-angle-right"></i></a>
+                  </p>
+                  <!-- Image -->
+                  <div class="da-img"><img src="{% static "img/parallax/1.png" %}" alt="image01" /></div>
+
+              </div>
+              <!-- Slide ends -->
+
+              <div class="da-slide">
+
+                  <p class="bblue">
+                    <!-- Heading -->
+                    <span class="das-head">New Fortuner</span><br />
+                    <!-- Para -->
+                    New Fortuner kini tampil dengan eksterior gagah yang akan memberikan kepuasan berkendara. Ruang interior yang lapang dan mewah untuk kenyamanan Anda selama di perjalanan.
+                    <br />
+                    <a class="das-link btn btn-default">Baca Selengkapnya <i class="icon-double-angle-right"></i></a>
+                  </p>
+                  <!-- Image -->
+                  <div class="da-img"><img src="{% static "img/parallax/2.png" %}" alt="image01" /></div>
+
+              </div>
+              <div class="da-slide">
+
+                  <p class="bgreen">
+                    <!-- Heading -->
+                    <span class="das-head">NAV1</span><br />
+                    <!-- Para -->
+                    NAV1 with the new bold exterior will give you the ultimate pleasure of driving. A luxurious, spacious cabin adding a new value of comfort to your journey.
+                    <br />
+                    <a class="das-link btn btn-default">Baca Selengkapnya <i class="icon-double-angle-right"></i></a>
+                  </p>
+                  <!-- Image -->
+                  <div class="da-img"><img src="{% static "img/parallax/3.png" %}" alt="image01" /></div>
+
+              </div>
+              <div class="da-slide">
+
+                  <p class="bred">
+                    <!-- Heading -->
+                    <span class="das-head">All New Vios</span><br />
+                    <!-- Para -->
+                    Kini hadir dengan tampilan lebih agresif dan memberikan tersendiri saat mengendarai. Sebuah performa berkendara paling berkualitas di kelasnya.
+                    <br />
+                    <a class="das-link btn btn-default">Baca Selengkapnya <i class="icon-double-angle-right"></i></a>
+                  </p>
+                  <!-- Image -->
+                  <div class="da-img"><img src="{% static "img/parallax/4.png" %}" alt="image01" /></div>
+
+              </div>
+
+              <nav class="da-arrows">
+                <span class="da-arrows-prev"></span>
+                <span class="da-arrows-next"></span>
+              </nav>
+            </div>
+  </div>
+<!-- Slider ends -->
+
+<!-- Hero starts -->
+
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="hero-left">
+            <img src="{% static "img/logotoyota.png" %}">
+          </div>
+          <div class="hero-right">
+            <div class="hero-title">Selamat Datang! di <b class="red">TOYOTA</b> Kalimantan Timur <b class="red">Anda</b> akan dilayani oleh <b class="red">Sales Executive</b> terpercaya.</div>
+            <p>Gus Rizal Sales Executive di PT. Graha Mulia Auto, Dealer Resmi TOYOTA Samarinda, Kalimantan Timur. Kami mempersembahkan berbagai informasi produk terbaik Toyota, mulai dari spesifikasi dan type mobil, promo, diskon, proses kredit maupun tunai bahkan bagi Anda yang ingin menjual unit lama Anda.</p>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Hero Ends -->
+<!-- Big box starts -->
+
+  <div class="big-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <!-- Left box -->
+          <div class="big-box-left blightblue">
+            <!-- Box content -->
+            <div class="box-content">
+              <!-- title -->
+              <div class="box-title">Sales Executive <br />Toyota Kalimantan Timur</div>
+              <!-- Para -->
+              <p>Kepuasan pelanggan menjadi prioritas utama Toyota dalam memberikan Total Best Ownership Experience kepada para pelanggannya. </p>
+              <!-- Button -->
+              <a href="#" class="btn btn-danger">Selengkapnya Tentang Saya</a>
+              <br /><br />
+              <!-- Links -->
+              <div class="box-links">
+                <a href="#">Lihat Produk Toyota <i class="icon-double-angle-right"></i></a>
+                <a href="#">Kontak Saya <i class="icon-double-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center box -->
+          <div class="big-box-mid blightblue">
+            <!-- Image -->
+            <a href="#"><img src="{% static "img/photos/girl1.jpg" %}" alt="" class="img-responsive" /></a>
+          </div>
+
+          <!-- Right box -->
+          <div class="big-box-right bblack">
+             <div class="box-content">
+                <div class="box-title">Sales<span class="lightblue"> Executive</span></div>
+
+                <h4>Nama</h4>
+                Gus Rizal
+                <h4>Phone</h4>
+                (+62) 852-4777-3770<br />
+                (+62) 853-8633-3813
+                <h4>Email</h4>
+                info@newtoyotakaltim.com<br />
+             </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+    </div>  
+  </div>
+  <div class="clearfix"></div>
+
+<!-- Big box ends -->
+
+<!-- CTA Starts -->
+
+<div class="container">
+  <div class="cta bviolet">
+    <div class="row">
+      <div class="col-md-5 col-sm-6">
+        <div class="ctas">
+          <!-- Title and Para -->
+          <h5><i class="icon-arrow-right icon-metroid"></i> Toyota Bombastis 2 </h5>
+          <p>Beli Toyota sekarang, Ambil 2 kali hadiah fantastisnya! Ayo ke dealer Toyota sekarang dan menangkan hadiah fantastisnya!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="ctas">
+          <!-- List -->
+          <ul>
+            <li>Grand Prize 1 Lexus RX 270 A/T.</li>
+            <li>1 Toyota 86 M/T</li>
+            <li>1 Alphard type X A/T</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <div class="ctas text-center">
+          <!-- Button -->
+      <div class="ctasl">
+        <a href="#" class="btn btn-danger">Lihat Selengkapnya <i class="icon-double-angle-right"></i></a>
+        <p>periode Februari - Maret 2014</p>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Ends -->
+
+
+<!-- Service and Social media starts -->
+
+<div class="service-home">
+  <div class="container">
+    <!-- Title -->
+    <h3 class="title"><i class="icon-arrow-right title-icon"></i> Produk</h3>
+    <div class="row">
+
+      <!-- Social -->
+      <div class="col-md-3 col-sm-6">
+
+        <div class="service-social bblack">
+          <!-- Big number -->
+          <div class="service-big">21<span class="lightblue">Produk</span></div>
+          <!-- Labels -->
+          <div class="label label-danger">Toyota</div><br />
+          <div class="label label-info">Kami</div> 
+          <div class="label label-success">Tawarkan</div>
+
+          <hr />
+
+          <!-- Social media -->
+          <div class="service-box bblue">
+            <!-- name and followers -->
+            <a href="#">Sedan <span class="pull-right">3 Jenis</span></a>
+          </div>
+          <div class="service-box borange">
+            <!-- name and followers -->
+            <a href="#">Hatchback <span class="pull-right">3 Jenis</span></a>
+          </div>
+          <div class="service-box blightblue">
+            <!-- name and followers -->
+            <a href="#">MPV <span class="pull-right">5 Jenis</span></a>
+          </div>
+          <div class="service-box bred">
+            <!-- name and followers -->
+            <a href="#">SUV <span class="pull-right">3 Jenis</span></a>
+          </div>
+          <div class="service-box borange">
+            <!-- name and followers -->
+            <a href="#">Commercial <span class="pull-right">4 Jenis</span></a>
+          </div>    
+          <div class="service-box blightblue">
+            <!-- name and followers -->
+            <a href="#">Sport <span class="pull-right">1 Jenis</span></a>
+          </div>
+          <div class="service-box bblue">
+            <!-- name and followers -->
+            <a href="#">Hybrid <span class="pull-right">2 Jenis</span></a>
+          </div>
+          <br />
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+      <!-- Service -->
+
+      <div class="col-md-7 col-sm-6 service-list">
+
+          <!--  Service #1 -->
+          <!-- Service icon -->
+          <div class="service-icon">
+            <img src="{% static "img/car/sedan.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <!-- Title -->
+            <h4>Sedan</h4>
+            <p>Mobil dengan kemewahan dan kemutakhiran teknologi terdepan.</p>
+          </div>
+
+          <hr />
+
+          <!-- Service #2 -->
+
+          <div class="service-icon">
+            <img src="{% static "img/car/hatchback.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <h4>Hatchback</h4>
+            <p>Mobil-mobil mini yang lincah dan praktis, sesuai untuk kondisi kota.</p>
+          </div>
+
+          <hr />   
+
+          <!-- Service #3 -->
+
+          <div class="service-icon">
+            <img src="{% static "img/car/mpv.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <h4>MPV</h4>
+            <p>Andalan keluarga, memuat lebih banyak penumpang dan barang.</p>
+          </div>
+          
+          <hr />
+
+          <!-- Service #4 -->
+
+          <div class="service-icon">
+            <img src="{% static "img/car/suv.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <h4>SUV</h4>
+            <p>Efektif dalam mengangkut barang & nyaman untuk membawa penumpang.</p>
+          </div>
+
+          <hr />
+           <!-- Service #2 -->
+
+          <div class="service-icon">
+            <img src="{% static "img/car/commercial.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <h4>Commercial</h4>
+            <p>Performa dan kehandalan yang sangat layak untuk menopang kegiatan.</p>
+          </div>
+
+          <hr />   
+          
+          <!--  Service #1 -->
+          <!-- Service icon -->
+          <div class="service-icon">
+            <img src="{% static "img/car/sport.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <!-- Title -->
+            <h4>Sport</h4>
+            <p>Alat transportasi sekaligus juga untuk tantangan dunia balap.</p>
+          </div>
+
+          <hr />
+
+          <!-- Service #3 -->
+
+          <div class="service-icon">
+            <img src="{% static "img/car/hybrid.jpg" %}">
+          </div>
+
+          <div class="service-content">
+            <h4>Hybrid</h4>
+            <p>Gabungan sisi unggul 2 sumber daya: motor listrik & mesin pembakaran.</p>
+          </div>
+
+          <br />
+
+
+          <div class="clearfix"></div>
+
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-2 col-sm-6">
+        <a href="#" class="service-image"><img src="{% static "img/photos/girl2.png" %}" alt="" class="img-responsive" /></a>
+      </div>
+
+    </div>
+
+    <hr />
+    
+  </div>
+</div>
+
+<!-- Service and Social media ends -->
+
+<!-- Features starts -->
+
+<div class="features-one">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-6">
+        <a href="#"><img src="{% static "img/photos/shots.jpg" %}" alt="" class="img-responsive" /></a>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+
+        <h2>All New Toyota Yaris Hadir Di Indonesia</h2>
+        <!-- Meta -->
+        <div class="features-meta">
+          <i class="icon-desktop lightblue"></i> DATE: 03 MAR 2014 
+          <i class="icon-gift lightblue"></i> POSTED BY: ADMIN 
+          <i class="icon-sitemap lightblue"></i> LEAVE A COMMENT
+        </div>
+        <p>Toyota Astra Motor (APM Toyota di Indonesia) mempertunjukkan All New Toyota Yaris yang akan diluncurkan di Indonesia pada semester awal 2014. Konsumen sudah bisa memesan Toyota Yaris ini di dealer-dealer terdekat di kota Anda,untuk area Samarinda dan sekitarnya (Kaltim),hubungi Sales Executive AREA KALTIM :  </p>
+        <a href="#" class="btn btn-danger btn-large">Baca selengkapnya <i class="icon-double-angle-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Features ends -->
+
+
+            
+<!-- Clients starts -->
+  
+  <div class="clients">
+    <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                     <h3 class="title">TOYOTA</h3>
+                     <p><i class="icon-quote-left lightblue"></i>Kepuasan pelanggan menjadi prioritas utama Toyota dalam memberikan Total Best Ownership Experience kepada para pelanggannya.<i class="icon-quote-right lightblue"></i></p>
+                     <img src="{% static "img/car/sedan.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/hatchback.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/mpv.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/suv.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/commercial.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/sport.jpg" %}" alt="" class="img-responsive" />
+                     <img src="{% static "img/car/hybrid.jpg" %}" alt="" class="img-responsive" />
+               </div>
+            </div>
+    </div>
+  </div>
+            
+<!-- Clients ends -->
+
+
+{% endblock %}

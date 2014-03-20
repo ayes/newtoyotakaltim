@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title and other stuffs -->
+  <title>New Toyota Kalimantan Timur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+  
+  <!-- Stylesheets -->
+  <!-- Bootstrap -->
+  <link href="{% static "style/bootstrap.css" %}" rel="stylesheet">
+  <!-- Font awesome icon -->
+  <link rel="stylesheet" href="{% static "style/font-awesome.css" %}">
+  <link rel="stylesheet" href="{% static "assets/css/font-awesome-ext.css" %}">
+  <!-- Navigation menu -->
+  <link rel="stylesheet" href="{% static "style/ddlevelsmenu-base.css" %}">
+  <link rel="stylesheet" href="{% static "style/ddlevelsmenu-topbar.css" %}">
+  {% block nbcss_slider %}{% endblock %}
+  <!-- PrettyPhoto -->
+  <link rel="stylesheet" href="{% static "style/prettyPhoto.css" %}">
+  <!-- Custom style -->
+  <link href="{% static "style/style.css" %}" rel="stylesheet">
+  
+  
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="{% static "js/html5shim.js" %}"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static "img/favicon/favicon.png" %}">
+</head>
+
+<body>
+
+{% load staticfiles %}
+  <div class="slidepanel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="spara"> 
+            <!-- Contact details -->
+            <p><i class="icon-envelope-alt red"></i> info@newtoyotakaltim.com &nbsp; 
+              <i class="icon-twitter red"></i>@rizal &nbsp; 
+              <i class="icon-phone red"></i>(+62) 8524-777-3770
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="social">
+              <!-- Social media icons. Repalce # with your profile links -->
+                      <a href="#" class="bblue"><i class="icon-facebook"></i></a>
+                      <a href="#" class="borange"><i class="icon-google-plus"></i></a> 
+                      <a href="#" class="blightblue"><i class="icon-twitter"></i></a>
+                      <a href="#" class="bviolet"><i class="icon-linkedin"></i></a>
+                      <a href="#" class="bred"><i class="icon-pinterest"></i></a>
+                      <a href="#" class="borange"><i class="icon-rss"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <!-- Sliding panel ends-->
+
+  <!-- Header starts -->
+
+  <header>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-5 col-sm-4">
+
+          <!-- Logo starts -->
+
+          <div class="logo">
+
+            <div class="logo-image">
+              <!-- Image link -->
+              <a href="/"><img src="{% static "img/toyota.jpg" %}"></a>
+            </div>
+            
+            <div class="logo-text">
+              <h1><a href="/">NEW<span class="red"> TOYOTA</span></a></h1>
+              <div class="logo-meta">Kalimantan Timur</div>
+            </div>
+
+            <div class="clearfix"></div>
+
+          </div>
+
+          <!-- Logo ends -->
+
+        </div>
+
+        <div class="col-md-7 col-sm-8">
+
+          <!-- Navbar starts -->
+
+          <div class="navi pull-right">
+            <div id="ddtopmenubar" class="mattblackmenu">
+              <!-- Main navigation -->
+              <!-- Use the background color class in anchor tag for colorful menu -->
+              <ul>
+
+                <li><a href="/" class="blightblue"> <i class="icon-home"></i> Beranda</a></li>
+
+                <!-- Main navigation -->
+                <li><a href="/product" rel="ddsubmenu2" class="bred"> <i class="icon-car-sign"></i> Produk</a>
+                    <!-- Sub Navigation -->
+                    <ul id="ddsubmenu2" class="ddsubmenustyle">
+                       <li><a href="/product/sedan">Sedan</a></li>
+                       <li><a href="/product/hatchback">Hatchback</a></li>
+                       <li><a href="/product/mpv">MPV</a></li>
+                       <li><a href="/product/suv">SUV</a></li>
+                       <li><a href="/product/commercial">Commercial</a></li>
+                       <li><a href="/product/sport">Sport</a></li>
+                       <li><a href="/product/hybrid">Hybrid</a></li>
+                    </ul>
+                </li>
+
+                <!-- Main navigation -->
+                <li><a href="#" rel="ddsubmenu2" class="bviolet"> <i class="icon-tablet"></i> Info</a>
+                    <!-- Sub Navigation -->
+                    <ul id="ddsubmenu2" class="ddsubmenustyle">
+                       <li><a href="/testimonial">Testimonials</a></li>
+                    </ul>
+                </li>                
+
+                <li><a href="#" class="bgreen"> <i class="icon-comments"></i> Berita</a>
+                </li>
+
+                <li><a href="portfolio.html" class="borange"> <i class="icon-camera"></i> Tentang</a></li>
+
+                <li><a href="#" class="bblue"> <i class="icon-envelope-alt"></i> Kontak</a></li>
+
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="navis"></div>
+
+          <!-- Navbar ends -->
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="clearfix"></div>
+
+  <!-- Header ends -->
+
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+
+<!-- Below area is for testimonial -->
+<div class="foot blightblue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          
+          <!-- User icon -->
+          <span class="twitter-icon text-center"><img src="{% static "img/toyota.png" %}"></span>
+          <p><em>"Berkontribusi kepada bangsa dan masyarakat melalui praktik profesional di bidang pemasaran produk-produk dan jasa pelayanan<br />kepada pelanggan yang berkualitas tinggi dalam lingkungan. "</em></p>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>  
+
+<footer>
+  <div class="container">
+    <div class="row">
+
+
+      <div class="widgets">
+
+        <div class="col-md-3">
+          <div class="fwidget">
+            
+            <h4>Kontak Saya</h4>
+
+                  <p>Gus Rizal Sales Executive Terpercaya Toyota</p>
+                  <hr />
+                  <i class="icon-home"></i> &nbsp; Jl. P. Antasari No. 22 Samarinda
+                  <hr />
+                  <i class="icon-phone"></i> &nbsp; (+62) 852-4777-3770
+                  <hr />
+                  <i class="icon-phone"></i> &nbsp; (+62) 853-8633-3813
+                  <hr />
+                  <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:#">info@newtoyotakaltim.com</a>
+                  <hr />
+                    <div class="social">
+                      <a href="#" class="bblue"><i class="icon-facebook"></i></a>
+                      <a href="#" class="borange"><i class="icon-google-plus"></i></a> 
+                      <a href="#" class="blightblue"><i class="icon-twitter"></i></a>
+                      <a href="#" class="bviolet"><i class="icon-linkedin"></i></a>
+                      <a href="#" class="bred"><i class="icon-pinterest"></i></a>
+                      <a href="#" class="borange"><i class="icon-rss"></i></a>
+                    </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="fwidget">
+            <h4>Kategori Berita</h4>
+            <ul>
+
+            </ul>
+          </div>
+        </div>        
+
+        <div class="col-md-3">
+          <div class="fwidget">
+            
+            <h4>Berlangganan</h4>
+            <p>Berlangganan artikel kami melalui email anda, dapatkan seputar informasi terbaru tentang Toyota dari kami.</p>
+            <p>Silahkan masukan email anda untuk berlangganan</p>
+            
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="subscribe" placeholder="Berlangganan...">
+              </div>
+              <button type="submit" class="btn btn-danger">Kirim</button>
+            </form>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="fwidget">
+            <h4>Berita Terbaru</h4>
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="copy">
+                <p>Copyright &copy; 2014 <a href="http://bsmsite.com">BaseSystem Management</a> - <a href="/">Beranda</a> | <a href="#">Tentang Saya</a> | <a href="#">FAQ</a> | <a href="#">Kontak Saya</a></p>
+          </div>
+      </div>
+
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</footer> 
+
+
+<!-- JS -->
+<script src="{% static "js/jquery.js" %}"></script> <!-- jQuery -->
+<script src="{% static "js/bootstrap.js" %}"></script> <!-- Bootstrap -->
+<script src="{% static "js/jquery.prettyPhoto.js" %}"></script> <!-- prettyPhoto -->
+<script src="{% static "js/jquery.isotope.js" %}"></script> <!-- isotope -->
+<script src="{% static "js/ddlevelsmenu.js" %}"></script> <!-- Navigation menu -->
+<script src="{% static "js/jquery.cslider.js" %}"></script> <!-- jQuery cSlider -->
+<script src="{% static "js/modernizr.custom.28468.js" %}"></script> <!-- Extra script for cslider -->
+
+<script src="{% static "js/filter.js" %}"></script> <!-- Support -->
+<script src="{% static "js/custom.js" %}"></script> <!-- Custom JS -->
+</body>
+</html>
