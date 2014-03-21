@@ -1,0 +1,108 @@
+ {% extends 'bbase.html' %}
+{% load staticfiles %}
+
+ {% block content %}
+  <!-- Sliding panel starts-->
+
+  <!-- Header ends -->
+
+  <!-- Page heading -->
+  <!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+  <div class="page-heading blightblue">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> Testimonial</h2>
+          <div class="pull-right heading-meta">Beberapa testimonial dari<span class="lightblue"> pelanggan </span>dan<span class="lightblue">rekan</span> kami.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page heading ends -->
+
+<!-- Content starts -->
+  <div class="content">
+    <div class="container">
+
+      <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <!-- Contact Form Area -->
+                  <h2>Formulir Testimonial <small>Silahkan Tulis Testimonial anda</small></h2>
+                  {% if berhasil %}<div class="alert alert-success">{{ berhasil }}</div>{% endif %}
+<form action="/testimonial" method="POST" class="form-horizontal">
+  {% csrf_token %}
+  {{ form.non_field_errors }}
+    <div class="form-group">
+      <label for="id_nama" class="col-lg-2 control-label">Nama</label>
+        <div class="col-lg-10">
+          {{ form.nama.errors }}
+          <input type="text" class="form-control" id="id_nama" name="nama" maxlength="100" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="id_bekerja" class="col-lg-2 control-label">Bekerja Di</label>
+        <div class="col-lg-10">
+          {{ form.bekerja.errors }}
+          <input type="text" class="form-control" id="id_bekerja" name="bekerja" maxlength="100" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+      <label for="id_jabatan" class="col-lg-2 control-label">Jabatan</label>
+        <div class="col-lg-10">
+          {{ form.jabatan.errors }}
+          <input type="text" class="form-control" id="id_jabatan" name="jabatan" maxlength="100" required="required">
+        </div>
+    </div>
+     <div class="form-group">
+      <label for="id_email" class="col-lg-2 control-label">Email</label>
+        <div class="col-lg-10">
+          {{ form.email.errors }}
+          <input type="email" class="form-control" id="id_email" name="email" maxlength="100" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-lg-2" for="id_komentar">Komentar</label>
+        <div class="col-lg-10">
+          {{ form.komentar.errors }}
+          <textarea class="form-control" id="id_komentar" rows="3" name="komentar" maxlength="255" required="required">{{ komentar }}</textarea>
+        </div>
+    </div>
+  <div class="form-group">
+                      <div class="col-lg-offset-2 col-lg-10">
+                        <button type="submit" class="btn btn-info">Kirim</button> &nbsp;
+                        <button type="reset" class="btn">Reset</button>
+                      </div>
+                    </div>
+                  </form>
+</div>
+</div>
+
+                  <div class="row">
+                     
+                     <!-- Colored background testimonials -->
+                  {% for testi in testi_list %}
+                           <div class="col-md-3 col-sm-3 col-xs-6">
+                              <!-- Testimonial 1 -->
+                              <div class="testimonials {% cycle 'blightblue' 'bgreen' 'borange' 'bblue' 'bred' %}">
+                                 <!-- Comment -->
+                                 <div class="tquote">"{{ testi.komentar }}"</div>
+                                 <!-- Author name and designation. Note down the syntax. -->
+                                 <div class="tauthor pull-right">- <i class="icon-user"></i>{{ testi.nama}}, <span class="color"> {{ testi.bekerja }} - {{ testi.jabatan }}</span></div>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                  {% endfor %}                                      
+                    </div>
+
+                   
+            
+            <!-- Testi ends -->
+
+    </div>
+  </div>
+  <!-- Content ends -->
+
+
+
+
+{% endblock %}
