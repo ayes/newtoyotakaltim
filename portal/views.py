@@ -90,3 +90,6 @@ def product_hybrid_prius(request):
 
 def product_hybrid_camry_hybrid(request):
 	return render_to_response('portal-product-hybrid-camry-hybrid.html',{}, RequestContext(request))
+
+def about_me(request):
+	return render_to_response('portal-about-me.html',{}, RequestContext(request))

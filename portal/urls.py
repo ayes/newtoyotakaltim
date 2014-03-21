@@ -37,4 +37,6 @@ urlpatterns = patterns('',
 	url(r'^product/hybrid/?$', 'portal.views.product_hybrid'),
 	url(r'^product/hybrid/prius/?', 'portal.views.product_hybrid_prius'),
 	url(r'^product/hybrid/camry-hybrid/?', 'portal.views.product_hybrid_camry_hybrid'),
+
+	url(r'^about-me/?', 'portal.views.about_me'),
 )
