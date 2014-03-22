@@ -1,0 +1,109 @@
+ {% extends 'bbase.html' %}
+{% load staticfiles %}
+
+ {% block content %}
+
+  <!-- Page heading -->
+  <!-- Give background color class on below line (bred, bgreen, borange, bviolet, blightblue, bblue) -->
+  <div class="page-heading blightblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="pull-left"><i class="icon-arrow-right title-icon"></i> Berita</h2>
+          <div class="pull-right heading-meta">Dibawah ini<span class="lightblue"> adalah</span> Berita <span class="lightblue">terkini</span> tentang TOYOTA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page heading ends -->
+
+  <!-- Content starts -->
+  <div class="content">
+    <div class="container">
+
+      <div class="blog">
+               <div class="row">
+                  <div class="col-md-12">
+                     
+                     <!-- Blog Posts -->
+                     <div class="row">
+                        <div class="col-md-8 col-sm-8">
+                           <div class="posts">
+                           
+                              <!-- Each posts should be enclosed inside "entry" class" -->
+                              <!-- Post one -->
+                              {% for bl in blog_list %}
+                              <div class="entry">
+                                 <h2><i class="icon-arrow-right title-icon"></i> <a href="/blog/read/{{ bl.id }}">{{ bl.judul }}</a></h2>
+                                 
+                                 <!-- Meta details -->
+                                 <div class="meta">
+                                    <i class="icon-calendar"></i> {{ bl.tanggal }} <i class="icon-user"></i> {{ bl.penulis }} <i class="icon-folder-open"></i> <a href="#">{{ bl.kategori }}</a> <span class="pull-right"><i class="icon-comment"></i> <a href="#">2 Comments</a></span>
+                                 </div>
+                                 
+                                 <!-- Thumbnail -->
+                                 <div class="bthumb2">
+                                    <a href="#"><img src="{{ bl.gambar.url_250x180 }}" alt="" class="img-responsive" /></a>
+                                 </div>
+                                 
+                                 <p>{{ bl.isi }}</p>
+                                 <a href="/blog/read/{{ bl.id }}" class="btn btn-danger">Baca Selengkapnya...</a>
+                                 <div class="clearfix"></div>
+                              </div> 
+                              {% endfor %}               
+                              <!-- Pagination -->
+                              <div class="paging">
+                                 <span class='current'>1</span>
+                                 <a href='#'>2</a>
+                                 <span class="dots">&hellip;</span>
+                                 <a href='#'>6</a>
+                                 <a href="#">Next</a>
+                              </div> 
+                              
+                              <div class="clearfix"></div>
+                              
+                           </div>
+                        </div>                        
+                        <div class="col-md-4 col-sm-4">
+                           <div class="sidebar">
+                              <!-- Widget -->
+                              <div class="widget">
+                                 <h4>Cari</h4>
+                                 <form class="form-inline" role="form">
+                  <div class="form-group">
+                  <input type="text" class="form-control" id="search" placeholder="">
+                  </div>
+                  <button type="submit" class="btn btn-danger">Cari</button>
+                </form>
+                              </div>
+                              <div class="widget">
+                                 <h4>Kategori</h4>
+                                 <ul>
+                                    {% for kategori in kategori_list %}
+                                    <li><a href="/category-blog/{{ kategori.id }}">{{ kategori }}</a></li>
+                                    {% endfor %}
+                                 </ul>
+                              </div>
+                              <div class="widget">
+                                 <h4>Berita lainnya</h4>
+                                <ul>
+                                    {% for pl in pl_list %}
+                                    <li><a href="/read-blog/{{ pl.id }}">{{ pl.judul }}</a></li>
+                                    {% endfor %}
+                                 </ul>
+                              </div>                              
+                           </div>                                                
+                        </div>
+                     </div>
+                     
+                     
+                     
+                  </div>
+               </div>
+            </div>
+
+    </div>
+  </div>
+  <!-- Content ends -->
+
+{% endblock %}
