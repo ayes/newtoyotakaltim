@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'', include('portal.urls')),
     url(r'', include('testimonial.urls')),
     url(r'', include('blog.urls')),
+    url(r'', include('contact.urls')),
 )
