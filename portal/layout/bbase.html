@@ -8,8 +8,8 @@
   <!-- Title and other stuffs -->
   <title>New Toyota Kalimantan Timur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="new toyota kaltim penjualan mobil toyota samarinda kalimantan timur">
+  <meta name="keywords" content="new, harga, toyota, mobil,">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
   
   <!-- Stylesheets -->
@@ -84,11 +84,11 @@
 
             <div class="logo-image">
               <!-- Image link -->
-              <a href="/"><img src="{% static "img/toyota.jpg" %}"></a>
+              <a href="/" data-no-instant><img src="{% static "img/toyota.jpg" %}"></a>
             </div>
             
             <div class="logo-text">
-              <h1><a href="/">NEW<span class="red"> TOYOTA</span></a></h1>
+              <h1><a href="/" data-no-instant>NEW<span class="red"> TOYOTA</span></a></h1>
               <div class="logo-meta">Kalimantan Timur</div>
             </div>
 
@@ -110,10 +110,10 @@
               <!-- Use the background color class in anchor tag for colorful menu -->
               <ul>
 
-                <li><a href="/" class="blightblue"> <i class="icon-home"></i> Beranda</a></li>
+                <li><a href="/" class="blightblue" data-no-instant> <i class="icon-home"></i> Beranda</a></li>
 
                 <!-- Main navigation -->
-                <li><a href="/product" rel="ddsubmenu2" class="bred"> <i class="icon-car-sign"></i> Produk</a>
+                <li><a href="/product" rel="ddsubmenu2" class="bred" data-no-instant> <i class="icon-car-sign"></i> Produk</a>
                     <!-- Sub Navigation -->
                     <ul id="ddsubmenu2" class="ddsubmenustyle">
                        <li><a href="/product/sedan">Sedan</a></li>
@@ -257,7 +257,7 @@
   <div class="row">
       <div class="col-md-12">
           <div class="copy">
-                <p>Website by <a href="http://bsmsite.com">BaseSystem Management</a> - <a href="/">Beranda</a> | <a href="/about-me">Tentang Saya</a> | <a href="#">FAQ</a> | <a href="/contact">Kontak Saya</a></p>
+                <p>Website by <a href="http://bsmsite.com">BaseSystem Management</a> - <a href="/" data-no-instant>Beranda</a> | <a href="/about-me">Tentang Saya</a> | <a href="#">FAQ</a> | <a href="/contact">Kontak Saya</a></p>
           </div>
       </div>
 
@@ -278,5 +278,17 @@
 
 <script src="{% static "js/filter.js" %}"></script> <!-- Support -->
 <script src="{% static "js/custom.js" %}"></script> <!-- Custom JS -->
+<script src="{% static "js/instantclick.min.js" %}" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49590511-4', 'newtoyotakaltim.com');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
